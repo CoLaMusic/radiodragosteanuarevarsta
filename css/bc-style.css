@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700);
+@font-face {
+  font-family: 'Material-Design-Icons';
+  src: url(../font/material-design-icons/Material-Design-Icons.eot); /* IE9 Compat Modes */
+  src: url(../font/material-design-icons/Material-Design-Icons.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(../font/material-design-icons/Material-Design-Icons.woff) format('woff'), /* Pretty Modern Browsers */
+       url(../font/material-design-icons/Material-Design-Icons.ttf)  format('truetype'), /* Safari, Android, iOS */
+       url(../font/material-design-icons/Material-Design-Icons.svg#svgFontName) format('svg'); /* Legacy iOS */
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.1em;
+}
+h1, h2, h3, h4, h5, h6, strong, b { color: #333333 }
+
+.opacity-0 { opacity: 0 }
+
+#bc-hero {
+  position: relative;
+  padding: 80px 0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-image: url("../img/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 3;
+}
+@media screen and (min-width: 600px) {
+  #bc-hero { padding: 40px 0 }
+}
+#bc-hero-logo img { margin: 0 auto }
+#bc-features { padding: 30px 0; }
+#bc-signup-form { max-width: 500px }
+#bc-signup-form button { width: 100%; max-width: 600px; }
+#bc-team { padding: 30px 0; padding-top: 60px; }
+#bc-team img { margin: 0 auto }
+.bc-footer {
+  overflow: hidden;
+  background: #333333;
+  padding-bottom: 2.75em;
+  padding-top: 2.75em;
+}
+.bc-footer h3, .bc-footer h4, .bc-footer p {
+  color: #fff;
+  line-height: 1.35;
+}
+.bc-footer h3 {
+  font-weight: 700;
+  font-size: 1.75em;
+}
+.bc-footer h4 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1.125em;
+}
+.bc-footer a { color: #67b2b1 }
+.bc-footer a:hover, .bc-footer a:focus, .bc-footer a:active { color: #c64f24 }
+.bc-footer .row { margin-bottom: 1.65em; }
+.lt-ie9 .bc-footer .row {
+  margin-bottom: 5.5em;
+}
+@media screen and (min-width: 600px) {
+  .bc-footer .row {
+    margin-bottom: 5.5em;
+  }
+}
+
+
+.bc-anim-dropdown-1 {
+  -moz-animation-name: dropUp;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 2s;
+  -webkit-animation-name: dropUp;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+  animation-name: dropUp;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+.bc-anim-dropdown-2 {
+  -moz-animation-name: dropDown;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: dropDown;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+  animation-name: dropDown;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.bc-anim-dropdown-3 {
+  -moz-animation-name: dropDown;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: dropDown;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 1s;
+  animation-name: dropDown;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes dropDown { 0% { -webkit-transform: translateY(-40px); opacity: 0; } 100% { -webkit-transform: translateY(0); opacity: 1; } }
+   @-moz-keyframes dropDown { 0% { -moz-transform: translateY(-40px); opacity: 0; } 100% { -moz-transform: translateY(0); opacity: 1; } }
+        @keyframes dropDown { 0% { transform: translateY(-40px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+@-webkit-keyframes dropUp { 0% { opacity: 0 } 100% { opacity: 1 } }
+   @-moz-keyframes dropUp { 0% { opacity: 0 } 100% { opacity: 1 } }
+        @keyframes dropUp { 0% { opacity: 0 } 100% { opacity: 1 } }
+
+.changing-background {
+  -webkit-transition: background-color 3s ease-out;
+     -moz-transition: background-color 3s ease-out;
+      -ms-transition: background-color 3s ease-out;
+       -o-transition: background-color 3s ease-out;
+          transition: background-color 3s ease-out;
+}
+
+.input-field .prefix.active { color: #039be5 }
+
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #039be5;
+  box-shadow: 0 1px 0 0 #039be5;
+}
+
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #039be5;
+}
